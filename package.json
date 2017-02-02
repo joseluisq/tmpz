@@ -1,0 +1,35 @@
+{
+  "name": "tmpz",
+  "version": "1.0.0",
+  "description": "Copy a file or directory to OS temporary directory with a random name. Also you can remove it later.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jose Luis Quintana",
+  "node": ">=4.2",
+  "license": "MIT",
+  "dependencies": {
+    "fs-extra": "^2.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joseluisq/tmpz.git"
+  },
+  "keywords": [
+    "copy",
+    "remove",
+    "random",
+    "temporary",
+    "temp",
+    "directory",
+    "file"
+  ],
+  "bugs": {
+    "url": "https://github.com/joseluisq/tmpz/issues"
+  },
+  "homepage": "https://github.com/joseluisq/tmpz#readme",
+  "devDependencies": {
+    "tape": "^4.6.3"
+  }
+}
