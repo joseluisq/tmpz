@@ -15,18 +15,16 @@ module.exports = {
       fs.copySync(src, dest)
       return dest
     } catch (err) {
-      console.error(err)
+      throw err
     }
   },
 
   remove: (dest) => {
     try {
-      if (dest) {
-        fs.removeSync(dest)
-        return dest
-      }
+      fs.removeSync(dest)
+      return dest
     } catch (err) {
-      console.error(err)
+      throw err
     }
   }
 }
