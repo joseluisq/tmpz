@@ -4,7 +4,9 @@
   "description": "Copy a file or directory to OS temporary directory with a random name. Also you can remove it later.",
   "main": "index.js",
   "author": "Jose Luis Quintana",
-  "node": ">=4.0",
+  "engines": {
+    "node": ">= 4.0"
+  },
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -24,12 +26,14 @@
     "eslint-plugin-promise": "^3.4.0",
     "eslint-plugin-standard": "^2.0.1",
     "nyc": "^10.1.2",
+    "readline-sync": "^1.4.6",
     "tape": "^4.6.3"
   },
   "scripts": {
     "test:tape": "tape test.js",
     "test": "npm run lint && nyc -n index.js npm run test:tape",
     "lint": "eslint index.js test.js",
+    "release": "node release.js",
     "coverage": "coveralls < ./coverage/lcov.info"
   },
   "babel": {
