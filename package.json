@@ -13,27 +13,28 @@
     "url": "git+https://github.com/joseluisq/tmpz.git"
   },
   "dependencies": {
-    "fs-extra": "^2.0.0"
+    "fs-extra": "^2.1.2"
   },
   "devDependencies": {
-    "babel-plugin-istanbul": "^3.1.2",
-    "babel-preset-es2015": "^6.22.0",
+    "babel-plugin-istanbul": "^4.1.1",
+    "babel-preset-es2015": "^6.24.0",
     "babel-preset-stage-2": "^6.22.0",
-    "babel-register": "^6.22.0",
-    "coveralls": "^2.11.15",
-    "eslint": "^3.14.1",
-    "eslint-config-standard": "^6.2.1",
-    "eslint-plugin-promise": "^3.4.0",
-    "eslint-plugin-standard": "^2.0.1",
-    "nyc": "^10.1.2",
-    "readline-sync": "^1.4.6",
+    "babel-register": "^6.24.0",
+    "coveralls": "^2.13.0",
+    "eslint": "^3.19.0",
+    "eslint-config-standard": "^10.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-node": "^4.2.2",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^2.2.0",
+    "nyc": "^10.2.0",
+    "readline-sync": "^1.4.7",
     "tape": "^4.6.3"
   },
   "scripts": {
     "test:tape": "tape test.js",
     "test": "npm run lint && nyc -n index.js npm run test:tape",
     "lint": "eslint index.js test.js",
-    "release": "node release.js",
     "coverage": "coveralls < ./coverage/lcov.info"
   },
   "babel": {
