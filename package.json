@@ -28,7 +28,6 @@
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^2.2.0",
     "nyc": "^10.2.0",
-    "readline-sync": "^1.4.7",
     "tape": "^4.6.3"
   },
   "scripts": {
