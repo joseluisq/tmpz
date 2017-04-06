@@ -3,13 +3,11 @@ const tmpdir = require('os').tmpdir()
 const crypto = require('crypto')
 const fs = require('fs-extra')
 
-function randomString (length) {
-  return crypto.randomBytes(Math.round(length / 2)).toString('hex')
-}
+const randName = len => crypto.randomBytes(Math.round(len / 2)).toString('hex')
 
 module.exports = {
-  copy: (src) => {
-    const dest = path.join(tmpdir, randomString(32))
+  copy: src => {
+    const dest = path.join(tmpdir, randName(32))
 
     try {
       fs.copySync(src, dest)
@@ -19,7 +17,7 @@ module.exports = {
     }
   },
 
-  remove: (dest) => {
+  remove: dest => {
     try {
       fs.removeSync(dest)
       return dest

@@ -18,12 +18,9 @@ branches:
   - /^greenkeeper/.*$/
 
 cache:
+  yarn: true
   directories:
     - node_modules
-
-before_install:
-  - npm install -g npm
-  - npm --version
 
 after_success: npm run coverage
 
