@@ -1,6 +1,6 @@
 {
   "name": "tmpz",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Copy a file or directory to OS temporary directory with a random name. Also you can remove it later.",
   "main": "index.js",
   "author": "Jose Luis Quintana",
