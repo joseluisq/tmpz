@@ -8,6 +8,14 @@
 
 ## Install
 
+[Yarn](https://github.com/yarnpkg/)
+
+```sh
+yarn add tmpz --dev
+```
+
+[NPM](https://www.npmjs.com/)
+
 ```sh
 npm install tmpz --save-dev
 ```
@@ -19,11 +27,13 @@ const tmpz = require('tmpz')
 
 try {
   const dest = tmpz.copy('./my_directory')
+
   console.log(dest)
   // > /tmp/393a6d0851bb6c10214f92bbaa9c833d
 
-  // Removing the temp dir in 7 seconds
+  // Removing our temp dir in 7 seconds...
   setTimeout(() => tmpz.remove(dest), 7000)
+
 } catch (err) {
   console.error(err)
 }
